@@ -2,12 +2,12 @@ package Vista;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
 import Modelo.Hotel;
+import Modelo.Reserva;
 
 public class Consola {
 
-	public String pideDato(String testo) {
+	public String pideDato(String texto) {
 		Scanner teclado = new Scanner(System.in);
 		return teclado.nextLine();
 	}
@@ -19,7 +19,8 @@ public class Consola {
 		
 	}
 	public void registro(){
-		ArrayList<Hotel> nuevoHospedaje;
+		Reserva r = new Reserva();
+		ArrayList<Reserva> nuevaReserva = new ArrayList<>();
 		 
 		
 	}
