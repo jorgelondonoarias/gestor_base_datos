@@ -20,7 +20,7 @@ public class Consola {
 	}
 	public void registro(){
 		ArrayList<Hotel> nuevoHospedaje;
-		
+		 
 		
 	}
 	public void guardar_BBDD() {
