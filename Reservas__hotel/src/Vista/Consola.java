@@ -1,6 +1,9 @@
 package Vista;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import Modelo.Hotel;
 
 public class Consola {
 
@@ -16,6 +19,8 @@ public class Consola {
 		
 	}
 	public void registro(){
+		ArrayList<Hotel> nuevoHospedaje;
+		
 		
 	}
 	public void guardar_BBDD() {
