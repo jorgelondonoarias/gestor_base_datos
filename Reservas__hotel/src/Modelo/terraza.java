@@ -1,6 +1,6 @@
 package Modelo;
 
-public class Terraza {
+public class terraza {
 	private int n_terraza;
 	enum tiempoReserva{
 		MANANA,TARDE,DIAENTERO,SINRESERVA
@@ -19,13 +19,13 @@ public class Terraza {
 		this.tiempoReserva = tiempoReserva;
 	}
 	
-	public Terraza(int n_terraza, Modelo.Terraza.tiempoReserva tiempoReserva) {
+	public terraza(int n_terraza, Modelo.terraza.tiempoReserva tiempoReserva) {
 		super();
 		this.n_terraza = n_terraza;
 		this.tiempoReserva = tiempoReserva;
 	}
 	
-	public Terraza() {
+	public terraza() {
 		super();
 		this.n_terraza = 0;
 		this.tiempoReserva = tiempoReserva.SINRESERVA;

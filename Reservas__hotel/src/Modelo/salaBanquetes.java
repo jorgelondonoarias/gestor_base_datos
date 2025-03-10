@@ -1,6 +1,10 @@
 package Modelo;
 
-public class Sala_reuniones {
+import Modelo.sala_reuniones.tiempoReserva;
+
+public class salaBanquetes {
+
+	
 	private int numSala;
 	enum tiempoReserva{
 		MANANA,TARDE,DIAENTERO,SINRESERVA
@@ -19,17 +23,18 @@ public class Sala_reuniones {
 		this.tiempoReserva = tiempoReserva;
 	}
 	
-	public Sala_reuniones(int numSala, Modelo.Sala_reuniones.tiempoReserva tiempoReserva) {
+	
+	public salaBanquetes(int numSala, Modelo.salaBanquetes.tiempoReserva tiempoReserva) {
 		super();
 		this.numSala = numSala;
 		this.tiempoReserva = tiempoReserva;
 	}
 	
-	public Sala_reuniones() {
+	public salaBanquetes() {
 		super();
 		this.numSala = 0;
-		this.tiempoReserva = tiempoReserva.SINRESERVA;
+		this.tiempoReserva = tiempoReserva;
 	}
-	 
-	 
+	
+	
 }
