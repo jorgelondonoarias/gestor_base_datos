@@ -13,6 +13,10 @@ public class Reserva {
 	private boolean terraza;
 	private ArrayList <Habitacion> habitacion = new ArrayList<>();
 	private ArrayList <Inquilino> inquilino = new ArrayList<>();
+	private ArrayList <Terraza> terrazar = new ArrayList<>();
+	private ArrayList <Sala_reuniones> salaR = new ArrayList<>();
+	private ArrayList <SalaBanquetes> salaB = new ArrayList<>();
+	
 	
 
 	
