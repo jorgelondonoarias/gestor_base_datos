@@ -1,8 +1,8 @@
 package Modelo;
 
-import Modelo.sala_reuniones.tiempoReserva;
+import Modelo.Sala_reuniones.tiempoReserva;
 
-public class salaBanquetes {
+public class SalaBanquetes {
 
 	
 	private int numSala;
@@ -24,13 +24,13 @@ public class salaBanquetes {
 	}
 	
 	
-	public salaBanquetes(int numSala, Modelo.salaBanquetes.tiempoReserva tiempoReserva) {
+	public SalaBanquetes(int numSala, Modelo.SalaBanquetes.tiempoReserva tiempoReserva) {
 		super();
 		this.numSala = numSala;
 		this.tiempoReserva = tiempoReserva;
 	}
 	
-	public salaBanquetes() {
+	public SalaBanquetes() {
 		super();
 		this.numSala = 0;
 		this.tiempoReserva = tiempoReserva;
