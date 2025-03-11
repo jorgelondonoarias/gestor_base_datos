@@ -23,6 +23,20 @@ public class Consola {
 		System.out.print(texto);
 		return teclado.nextInt();
 	}
+	public boolean pideBooleano(String texto) {
+		Scanner teclado = new Scanner(System.in);
+		int opcion;
+		System.out.println(texto);
+		System.out.println("\t 1.Si");
+		System.out.println("\t 2.No");
+		System.out.print("\tElige una opcion");
+		opcion = teclado.nextInt();
+		if (opcion == 1) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 	public void menu() {
 		Scanner teclado = new Scanner(System.in);
 		int opcion;
@@ -61,17 +75,30 @@ public class Consola {
 		SalaBanquetes sb= new SalaBanquetes();
 		Sala_reuniones sr = new Sala_reuniones();
 		Terraza t = new Terraza();
-		ArrayList<Reserva> nuevaReserva = new ArrayList<>();
-		
-		i.setNombre(pideCadena("Nombre: "));
-		i.setApellido1(pideCadena("Primer apellido: "));
-		i.setApellido2(pideCadena("Segundo apellido: "));
-		i.setCorreo(pideCadena("Correo electronico: "));
-		i.setDireccion(pideCadena("Direccion: "));
-		
-		
-		
+		ArrayList<Reserva> nuevaReserva = new ArrayList<>();	
 	} 
+
+	public Inquilino pideDatos() {
+		Inquilino nuevoInquilino = new Inquilino();
+		nuevoInquilino.setDni(pideCadena("DNI: "));
+		nuevoInquilino.setLetraDni(pideEntero("Letra DNI: "));
+		nuevoInquilino.setNombre(pideCadena("Nombre: "));
+		nuevoInquilino.setApellido1(pideCadena("Primer apellido: "));
+		nuevoInquilino.setApellido2(pideCadena("Segundo apellido: "));
+		nuevoInquilino.setCorreo(pideCadena("Correo electronico: "));
+		nuevoInquilino.setEdad(pideEntero("Edad: "));
+		nuevoInquilino.setDireccion(pideCadena("Direccion: "));
+		nuevoInquilino.setCiudad(pideCadena("Ciudad: "));
+		nuevoInquilino.setCodPostal(pideEntero("Codigo postal: "));
+		nuevoInquilino.setNumTelefono(pideEntero("Telefono: "));
+		nuevoInquilino.setAlergias(pideBooleano("Tiene alguna alergia: "));
+		nuevoInquilino.setDiscapacidad(pideCadena("Tiene alguna discapacidad: "));
+
+		return nuevoInquilino;
+	}
+	
+
+	
 	public void guardar_BBDD() {
 		
 	}
